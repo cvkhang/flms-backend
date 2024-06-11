@@ -1,0 +1,1 @@
+call _flms.submit_coach_squad($1,$2,$3)
