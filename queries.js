@@ -542,7 +542,7 @@ const addRef = (request, response) => {
 const deleteRef = (request, response) => {
   const ref_id = (request.params.ref_id)
 
-  pool.query('delete from _flms.referee where ref_id = $1', [ref_id], (error, results) => {
+  pool.query('delete from _flms.referees where ref_id = $1', [ref_id], (error, results) => {
     if (error) {
       throw error
     }
