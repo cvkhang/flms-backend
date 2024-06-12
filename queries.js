@@ -593,7 +593,7 @@ const addRefSchedule = (request, response) => {
 
 const deleteRefSchedule = (request, response) => {
   const ref_id = (request.params.ref_id);
-  const match_id = (request.params.ref_id);
+  const match_id = (request.params.match_id);
 
   pool.query('delete from _flms.ref_match where ref_id = $1 and match_id = $2', [ref_id,match_id], (error, results) => {
     if (error) {
